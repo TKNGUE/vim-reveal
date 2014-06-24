@@ -8,7 +8,15 @@ vim plugin that use markdown and reveal.js to generate presentations.
 * Whatever the package managing plugin you are using.
 * Download or clone [reveal.js](https://github.com/hakimel/reveal.js/) somewhere.
 * Configuration
-
+  
+Example:  
+```
+    NeoBundleLazy 'TKNGUE/vim-reveal',{  
+                \ "autoload"    : {
+                \   "filetypes" : ["python", "python3", "djangohtml"],  
+                \},
+                \}
+```
 ### Vim configuration
 
 ```vim
@@ -42,8 +50,13 @@ And you need something to customize the reveal.js options.
 ### Generate the html file
 
 After finish editing something like [this](https://raw.github.com/farseer90718/vim-reveal/master/test/vim-reveal.md).
-Use the `:RevealIt` command to generate the html file.And after you open the page in a browser,somthing like [this](http://farseer90718.github.io/vim-reveal/vim-reveal.html) will happen.
+Use the `:RevealIt` or `:RevealOpen` command to generate the html file.  
+And after you open the page in a browser,somthing like [this](http://farseer90718.github.io/vim-reveal/vim-reveal.html) will happen.
+
+### This Plugin cooporate with open-broser.vim
+This plugin can cooporate the plugin, open-broser.vim.  
+See also 
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/farseer90718/vim-reveal/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 
