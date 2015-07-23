@@ -13,8 +13,8 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 let s:newline_character = "\n"
-if exists('g:reveal_root_path')   
-    g:reveal_root_path  = $HOME.'/reveal.js/'
+if !exists('g:reveal_root_path')   
+    let g:reveal_root_path  = $HOME.'/reveal.js/'
 endif
 
 let s:template_path = expand('<sfile>:p:h').'/../template/'
